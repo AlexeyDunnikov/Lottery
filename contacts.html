@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body style="background-image: url('images/page-top-bg.png')">
+    <div class="wrapper">
+      <aside class="menu">
+        <a class="logo" href="#">
+          <img class="logo-img" src="images/logo.png" alt="logo" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#"> Главная </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#"> Наши игры </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#"> Призы </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#"> FAQ </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#"> Правила </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__user-link btn" href="#">
+          <img
+            class="header__user-link__img"
+            src="images/icons/user.png"
+            alt="user"
+          />
+          <span class="header__user-link__text">Личный кабинет</span>
+        </a>
+      </aside>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img class="logo-img" src="images/logo.png" alt="logo" />
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#"> Главная </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#"> Наши игры </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#"> Призы </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#"> FAQ </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#"> Правила </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__user-link btn" href="#">
+              <img
+                class="header__user-link__img"
+                src="images/icons/user.png"
+                alt="user"
+              />
+              <span class="header__user-link__text">Личный кабинет</span>
+            </a>
+
+            <button class="header__hamburger-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Главная </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Информация </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#"> Контакты </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="contacts">
+          <div class="container">
+            <h3 class="contacts__title section-title">Обратная связь</h3>
+            <div class="contacts__inner">
+              <form class="contacts__form">
+                <div class="contacts__form-content">
+                  <label class="contacts__form-label">
+                    <p class="contacts__form-label__text required-text">имя</p>
+                    <input
+                      class="contacts__form-input"
+                      type="text"
+                      name="userSurname"
+                      required
+                    />
+                  </label>
+
+                  <label
+                    class="
+                      contacts__form-label contacts__form-label__select-box
+                    "
+                  >
+                    <p class="contacts__form-label__text required-text">Тема</p>
+                    <select
+                      class="contacts__form-select custom-select"
+                      name="theme"
+                      id="theme"
+                      data-placeholder="Выберите тему"
+                    >
+                      <option value=""></option>
+                      <option value="1">Тема 1</option>
+                      <option value="2">Тема 2</option>
+                      <option value="3">Тема 3</option>
+                      <option value="4">Тема 4</option>
+                      <option value="5">Тема 5</option>
+                    </select>
+                  </label>
+
+                  <label class="contacts__form-label">
+                    <p class="contacts__form-label__text required-text">
+                      фамилия
+                    </p>
+                    <input
+                      class="contacts__form-input"
+                      type="text"
+                      name="userName"
+                      required
+                    />
+                  </label>
+
+                  <label class="contacts__form-label row-2">
+                    <p class="contacts__form-label__text required-text">
+                      сообщение
+                    </p>
+                    <textarea
+                      class="contacts__form-textarea"
+                      name="userMessage"
+                      id="userMessage"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </label>
+
+                  <label class="contacts__form-label">
+                    <p class="contacts__form-label__text required-text">
+                      e-mail
+                    </p>
+                    <input
+                      class="contacts__form-input"
+                      type="text"
+                      name="userEmail"
+                      required
+                    />
+                  </label>
+                </div>
+
+                <label class="contacts__form-checkbox-label">
+                  <input
+                    class="contacts__form-checkbox"
+                    type="checkbox"
+                    name="isAgree"
+                    required
+                  />
+                  <p class="contacts__form-checkbox-label__text">
+                    Согласен на обработку персональных данных в соответствии
+                    <a class="contacts__form-link" href="#">политикой</a>
+                    <span class="required-star">*</span>
+                  </p>
+                </label>
+
+                <button class="contacts__form-btn btn" type="submit">
+                  <img
+                    class="contacts__form-btn__img"
+                    src="images/icons/mail.png"
+                    alt="image"
+                  />
+                  <span class="contacts__form-btn__text"> Отправить </span>
+                </button>
+              </form>
+
+              <div class="contacts__img-box">
+                <img
+                  class="contacts__img"
+                  src="images/contacts-img.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="footer"
+        style="background-image: url('images/page-bottom-bg.png')"
+      >
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <a class="logo" href="#">
+                <img class="logo-img" src="images/logo.png" alt="logo" />
+              </a>
+              <p class="footer__right-text">
+                © 2021 ООО «3ZONE». Все права защищены.
+              </p>
+            </div>
+            <div class="footer__right">
+              <p class="footer__right-text">Пользовательское соглашение</p>
+              <p class="footer__right-text">Обратная связь</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
